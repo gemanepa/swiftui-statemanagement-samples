@@ -13,10 +13,13 @@ This SwiftUI project provides examples of state management on iOS SwiftUI utiliz
    
   - https://developer.apple.com/documentation/swiftui/stateobject
    
+  - https://developer.apple.com/documentation/combine/observableobject
+  
   - https://developer.apple.com/documentation/swiftui/observedobject
    
   - https://developer.apple.com/documentation/observation/observable()
 
+  - https://developer.apple.com/documentation/swiftui/bindable/
   
 
 ## Views
