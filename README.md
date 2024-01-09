@@ -3,6 +3,22 @@
 
 This SwiftUI project provides examples of state management on iOS SwiftUI utilizing the @State and @ObservedObject property wrappers with the MVVM (Model-View-ViewModel) architecture. The two main views, `StateExampleView` and `ObservedObjectExampleView`, demonstrate different approaches to managing and updating the state within a SwiftUI app.
 
+## Useful Documentation
+
+  - https://developer.apple.com/documentation/swiftui/managing-user-interface-state
+   
+  - https://developer.apple.com/documentation/swiftui/managing-model-data-in-your-app
+   
+  - https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro
+   
+  - https://developer.apple.com/documentation/swiftui/stateobject
+   
+  - https://developer.apple.com/documentation/swiftui/observedobject
+   
+  - https://developer.apple.com/documentation/observation/observable()
+
+  
+
 ## Views
 
 ### StateExampleView
@@ -16,13 +32,24 @@ This view showcases the use of the `@State` property wrapper and introduces a Vi
 -   Two-way data binding with `$` prefix.
 -   Demonstrates updating username and counter.
 
-### ObservedObjectExampleView
+### ObservableExampleView [Available since iOS 17.0]
 
-This view utilizes the `@ObservedObject` property wrapper and introduces a ViewModel (`ObservedObjectExampleViewModel`) to manage state stored in an external object. It showcases the synchronization of state updates between views.
+This view utilizes the `@Observable` macro + the `@Bindable` property wrapper, using a ViewModel (`ObservableExampleViewModel`) to manage state stored in an external object. It showcases the synchronization of state updates between views.
 
 #### Features
 
--   `@ObservedObject` for managing external object's state.
+-   `@Observable` + `@Bindable` for managing external object's state.
+-   Introduces ViewModel for presentation logic.
+-   Two-way data binding with `$` prefix.
+-   Synchronizing username and counter updates between views.
+
+### ObservableObjectExampleView [Legacy since iOS 17.0]
+
+This view utilizes the `ObservableObject` object + the `@ObservedObject` property wrapper (both legacy since iOS 17.0. Replaced by @Observable + @Bindable), using a ViewModel (`ObservableObjectExampleViewModel`) to manage state stored in an external object. It showcases the synchronization of state updates between views.
+
+#### Features
+
+-   `ObservableObject` + `@ObservedObject` for managing external object's state.
 -   Introduces ViewModel for presentation logic.
 -   Two-way data binding with `$` prefix.
 -   Synchronizing username and counter updates between views.

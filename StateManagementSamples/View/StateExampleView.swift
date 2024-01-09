@@ -8,7 +8,7 @@
 import SwiftUI
 
 // First View using @State. Simplicity instead of MVVM (check ObservedObject for MVVM)
-struct StateExampleView: View {
+struct StateExampleView: View { // https://developer.apple.com/documentation/swiftui/managing-user-interface-state
     // @State variable to track the username and counter
     @State private var username: String = ""
     @State private var counter: Int = 0
@@ -19,7 +19,7 @@ struct StateExampleView: View {
                 .font(.title)
                 .padding(.bottom, 5)
 
-            Text("@State is a property wrapper that is used to declare a state variable within a view. State variables are used to store and manage the data that changes over time within the view. When the value of a @State variable changes, SwiftUI automatically updates the corresponding view to reflect the new state.")
+            Text("@State is a property wrapper that is used to declare a state variable within a view. State variables are used to store and manage the data that changes over time within the view. When the value of a @State variable changes, SwiftUI automatically updates the corresponding view to reflect the new state. More in https://developer.apple.com/documentation/swiftui/managing-user-interface-state")
                 .padding(.bottom, 35.0)
 
             Text("Examples").font(.title2).padding(.bottom, 35.0)

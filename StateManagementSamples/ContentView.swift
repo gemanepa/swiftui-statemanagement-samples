@@ -8,28 +8,35 @@ import SwiftUI
 
 // Main ContentView with navigation between the two views
 struct ContentView: View {
-    @StateObject var userData = UserData()
+    @StateObject var observableObjectUserData = ObservableObjectUserData();
+    @State var observableUserData = ObservableUserData();
 
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
                 NavigationLink(destination: StateExampleView()) {
-                    Text("Navigate to View using @State")
+                    Text("View using @State")
                         .foregroundColor(.blue)
-                        .padding()
+                        .padding(.vertical)
                 }
 
-                NavigationLink(destination: ObservedObjectExampleView(viewModel: ObservedObjectExampleViewModel(userData: userData))) {
-                    Text("Navigate to View using @ObservedObject")
+                NavigationLink(destination: ObservedObjectExampleView(viewModel: ObservableObjectExampleViewModel(userData: observableObjectUserData))) {
+                    Text("View using ObservableObject+@ObservedObject")
                         .foregroundColor(.green)
-                        .padding()
+                        .padding(.vertical)
                 }
+                
+                NavigationLink(destination: ObservableExampleView(viewModel: ObservableExampleViewModel(userData: observableUserData))) {
+                    Text("View using @Observable+@Bindable")
+                        .foregroundColor(.brown)
+                        .padding(.vertical)
+                }
+                
                 Spacer()
             }
             .navigationBarTitle("State Management")
             .padding(.top)
         }
-        .padding(.horizontal, 15.0)
     }
 }
 

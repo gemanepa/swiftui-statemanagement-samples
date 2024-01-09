@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD7C9EA72B4B590E0089E025 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C9EA62B4B590E0089E025 /* UserData.swift */; };
-		AD7C9EAB2B4B5A320089E025 /* ObservedObjectExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C9EAA2B4B5A320089E025 /* ObservedObjectExampleViewModel.swift */; };
+		AD7C9EAB2B4B5A320089E025 /* ObservableObjectExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C9EAA2B4B5A320089E025 /* ObservableObjectExampleViewModel.swift */; };
 		AD7C9EAE2B4B69C10089E025 /* StateExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C9EAD2B4B69C10089E025 /* StateExampleView.swift */; };
-		AD7C9EB02B4B69FD0089E025 /* ObservedObjectExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C9EAF2B4B69FD0089E025 /* ObservedObjectExampleView.swift */; };
+		AD7C9EB02B4B69FD0089E025 /* ObservableObjectExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7C9EAF2B4B69FD0089E025 /* ObservableObjectExampleView.swift */; };
+		AD8557E22B4D208A00496F25 /* ObservableExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8557E12B4D208A00496F25 /* ObservableExampleViewModel.swift */; };
+		AD8557E42B4D246600496F25 /* ObservableObjectUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8557E32B4D246600496F25 /* ObservableObjectUserData.swift */; };
+		AD8557E62B4D257A00496F25 /* ObservableUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8557E52B4D257A00496F25 /* ObservableUserData.swift */; };
+		AD8557E82B4D267300496F25 /* ObservableExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8557E72B4D267300496F25 /* ObservableExampleView.swift */; };
 		ADAD29742B4B441B0034DF7C /* StateManagementSamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD29732B4B441B0034DF7C /* StateManagementSamplesApp.swift */; };
 		ADAD29762B4B441B0034DF7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAD29752B4B441B0034DF7C /* ContentView.swift */; };
 		ADAD29782B4B441E0034DF7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAD29772B4B441E0034DF7C /* Assets.xcassets */; };
@@ -38,10 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD7C9EA62B4B590E0089E025 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		AD7C9EAA2B4B5A320089E025 /* ObservedObjectExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectExampleViewModel.swift; sourceTree = "<group>"; };
+		AD7C9EAA2B4B5A320089E025 /* ObservableObjectExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectExampleViewModel.swift; sourceTree = "<group>"; };
 		AD7C9EAD2B4B69C10089E025 /* StateExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateExampleView.swift; sourceTree = "<group>"; };
-		AD7C9EAF2B4B69FD0089E025 /* ObservedObjectExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectExampleView.swift; sourceTree = "<group>"; };
+		AD7C9EAF2B4B69FD0089E025 /* ObservableObjectExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectExampleView.swift; sourceTree = "<group>"; };
+		AD8557E12B4D208A00496F25 /* ObservableExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExampleViewModel.swift; sourceTree = "<group>"; };
+		AD8557E32B4D246600496F25 /* ObservableObjectUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectUserData.swift; sourceTree = "<group>"; };
+		AD8557E52B4D257A00496F25 /* ObservableUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableUserData.swift; sourceTree = "<group>"; };
+		AD8557E72B4D267300496F25 /* ObservableExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableExampleView.swift; sourceTree = "<group>"; };
 		ADAD29702B4B441B0034DF7C /* StateManagementSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateManagementSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAD29732B4B441B0034DF7C /* StateManagementSamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagementSamplesApp.swift; sourceTree = "<group>"; };
 		ADAD29752B4B441B0034DF7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,7 +89,8 @@
 		AD7C9EA92B4B5A190089E025 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AD7C9EAA2B4B5A320089E025 /* ObservedObjectExampleViewModel.swift */,
+				AD7C9EAA2B4B5A320089E025 /* ObservableObjectExampleViewModel.swift */,
+				AD8557E12B4D208A00496F25 /* ObservableExampleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -92,7 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				AD7C9EAD2B4B69C10089E025 /* StateExampleView.swift */,
-				AD7C9EAF2B4B69FD0089E025 /* ObservedObjectExampleView.swift */,
+				AD7C9EAF2B4B69FD0089E025 /* ObservableObjectExampleView.swift */,
+				AD8557E72B4D267300496F25 /* ObservableExampleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,7 +168,8 @@
 		ADAD299E2B4B58510034DF7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD7C9EA62B4B590E0089E025 /* UserData.swift */,
+				AD8557E32B4D246600496F25 /* ObservableObjectUserData.swift */,
+				AD8557E52B4D257A00496F25 /* ObservableUserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,11 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7C9EAB2B4B5A320089E025 /* ObservedObjectExampleViewModel.swift in Sources */,
-				AD7C9EA72B4B590E0089E025 /* UserData.swift in Sources */,
-				AD7C9EB02B4B69FD0089E025 /* ObservedObjectExampleView.swift in Sources */,
+				AD8557E22B4D208A00496F25 /* ObservableExampleViewModel.swift in Sources */,
+				AD8557E62B4D257A00496F25 /* ObservableUserData.swift in Sources */,
+				AD7C9EAB2B4B5A320089E025 /* ObservableObjectExampleViewModel.swift in Sources */,
+				AD7C9EB02B4B69FD0089E025 /* ObservableObjectExampleView.swift in Sources */,
 				ADAD29762B4B441B0034DF7C /* ContentView.swift in Sources */,
 				ADAD29742B4B441B0034DF7C /* StateManagementSamplesApp.swift in Sources */,
+				AD8557E42B4D246600496F25 /* ObservableObjectUserData.swift in Sources */,
+				AD8557E82B4D267300496F25 /* ObservableExampleView.swift in Sources */,
 				AD7C9EAE2B4B69C10089E025 /* StateExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
