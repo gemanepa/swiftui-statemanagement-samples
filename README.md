@@ -1,7 +1,7 @@
 
 # State Management Samples
 
-This SwiftUI project provides examples of state management on iOS SwiftUI utilizing the @State and @ObservedObject property wrappers with the MVVM (Model-View-ViewModel) architecture. The two main views, `StateExampleView` and `ObservedObjectExampleView`, demonstrate different approaches to managing and updating the state within a SwiftUI app.
+This SwiftUI project provides examples of state management on iOS SwiftUI in a MVVM (Model-View-ViewModel) architecture. The three main views, `StateExampleView`, `ObservableExampleView`, and `ObservableObjectExampleView`, demonstrate three different approaches to managing and updating the state within a SwiftUI app.
 
 ## Useful Documentation
 
